@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Yu Gothic Bold.otf">
+            <string>YuGo-Bold</string>
+        </array>
+        <array key="Yu Gothic Medium.otf">
+            <string>YuGo-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="87" id="KGk-i7-Jjw" customClass="exchangeSeatTableViewCell" customModule="iOrder2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="209" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="209" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZx-ZL-2O5">
+                        <rect key="frame" x="8" y="3" width="30" height="30"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="4Cs-62-Mzd"/>
+                            <constraint firstAttribute="width" constant="30" id="JKh-ys-o38"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="YuGo-Bold" family="YuGothic" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="lm5-lb-WTS">
+                        <rect key="frame" x="43" y="6" width="158" height="24"/>
+                        <fontDescription key="fontDescription" name="YuGo-Bold" family="YuGothic" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iP3-RI-PJS">
+                        <rect key="frame" x="8" y="36" width="193" height="47"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ﾔﾏﾀﾞ ﾀﾛｳ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="pzg-K9-oa6">
+                                <rect key="frame" x="0.0" y="0.0" width="193" height="14"/>
+                                <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="山田　太郎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Ki-5e-QU8">
+                                <rect key="frame" x="0.0" y="14" width="193" height="33"/>
+                                <fontDescription key="fontDescription" name="YuGo-Bold" family="YuGothic" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="2Ki-5e-QU8" firstAttribute="height" secondItem="pzg-K9-oa6" secondAttribute="height" multiplier="7:3" id="Txd-pH-uq1"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pZx-ZL-2O5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="6cT-JO-EgI"/>
+                    <constraint firstItem="lm5-lb-WTS" firstAttribute="leading" secondItem="pZx-ZL-2O5" secondAttribute="trailing" constant="5" id="Hcq-Io-gKd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iP3-RI-PJS" secondAttribute="trailing" id="Jwd-qE-zx7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="iP3-RI-PJS" secondAttribute="bottom" constant="-4" id="LvF-kH-qJv"/>
+                    <constraint firstItem="iP3-RI-PJS" firstAttribute="top" secondItem="pZx-ZL-2O5" secondAttribute="bottom" constant="3" id="VHU-JP-ORF"/>
+                    <constraint firstItem="lm5-lb-WTS" firstAttribute="centerY" secondItem="pZx-ZL-2O5" secondAttribute="centerY" id="Vh1-L1-nyC"/>
+                    <constraint firstItem="iP3-RI-PJS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="W9z-vZ-dLf"/>
+                    <constraint firstItem="pZx-ZL-2O5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="Z7m-HZ-JQc"/>
+                    <constraint firstItem="lm5-lb-WTS" firstAttribute="height" secondItem="pZx-ZL-2O5" secondAttribute="height" multiplier="0.8" id="h2c-qq-H4y"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lm5-lb-WTS" secondAttribute="trailing" id="xcA-5E-Vau"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="exchangeCellHolder" destination="lm5-lb-WTS" id="Mz1-IW-smp"/>
+                <outlet property="exchangeCellKana" destination="pzg-K9-oa6" id="Bke-8R-iho"/>
+                <outlet property="exchangeCellName" destination="2Ki-5e-QU8" id="ZaS-SY-JYQ"/>
+                <outlet property="exchangeCellSeat" destination="pZx-ZL-2O5" id="neS-Pg-5oC"/>
+            </connections>
+            <point key="canvasLocation" x="-15.5" y="80.5"/>
+        </tableViewCell>
+    </objects>
+</document>

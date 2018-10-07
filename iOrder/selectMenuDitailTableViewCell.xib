@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Yu Gothic Medium.otf">
+            <string>YuGo-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="KGk-i7-Jjw" customClass="selectMenuDitailTableViewCell" customModule="iOrder2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g0V-JI-cqb">
+                        <rect key="frame" x="8" y="11" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="J0p-PI-DAd"/>
+                            <constraint firstAttribute="width" secondItem="g0V-JI-cqb" secondAttribute="height" multiplier="1:1" id="J2s-Ed-OYh"/>
+                            <constraint firstAttribute="height" constant="20" id="kye-1f-iQd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="J2s-Ed-OYh"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="FlZ-nj-5mo">
+                        <rect key="frame" x="38" y="8" width="274" height="28"/>
+                        <fontDescription key="fontDescription" name="YuGo-Medium" family="YuGothic" pointSize="30"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FlZ-nj-5mo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Fg8-3l-gF9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FlZ-nj-5mo" secondAttribute="trailing" id="Ue7-dg-dpT"/>
+                    <constraint firstItem="g0V-JI-cqb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="c3G-3A-md7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FlZ-nj-5mo" secondAttribute="bottom" id="lGv-4A-dsK"/>
+                    <constraint firstItem="g0V-JI-cqb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="n3d-a2-3OV"/>
+                    <constraint firstItem="FlZ-nj-5mo" firstAttribute="leading" secondItem="g0V-JI-cqb" secondAttribute="trailing" constant="10" id="rVn-b9-GjM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectMenuImage" destination="g0V-JI-cqb" id="hPT-S7-OUb"/>
+                <outlet property="selectMenuName" destination="FlZ-nj-5mo" id="yVv-eA-g7w"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
